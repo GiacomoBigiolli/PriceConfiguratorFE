@@ -3,6 +3,7 @@ import {Message, Button, Select} from "semantic-ui-react";
 import '../filecss/configurazione.css';
 import Intestazione from './intestazione';
 import DropDownList from "./dropDownList";
+
     class Configurazione extends React.Component {
         constructor(props){
             super(props);
