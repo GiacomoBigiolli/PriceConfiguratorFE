@@ -8,7 +8,7 @@ import DropDownList from "./dropDownList";
         constructor(props){
             super(props);
             this.state = {
-                tipology: []
+                typology: []
             };
             this.generateDropDownList = this.generateDropDownList.bind(this);
             this.componentDidMount = this.componentDidMount.bind(this);
@@ -16,21 +16,21 @@ import DropDownList from "./dropDownList";
 
         generateDropDownList(){
             let list = [];
-            this.state.tipology.map(i => {
+            this.state.typology.map(i => {
                 list.push(
-                    <DropDownList tipology={i}/>
+                    <DropDownList typology={i}/>
                 );
             })
             return list;
         }
     
         componentDidMount(){
-            let tipologyURL = 'http://localhost:3000/tipology';
-            fetch(tipologyURL)
+            let typologyURL = 'http://localhost:3000/typology';
+            fetch(typologyURL)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
-                    this.setState({tipology: data.tipology})
+                    this.setState({Typology: data.Typology})
                 })
                 .catch(err => {
                     console.log(err);
@@ -42,26 +42,31 @@ import DropDownList from "./dropDownList";
             return (
                 <>
                     <Intestazione />
-                        <div className="spazia">
+                        <div className = "spazia">
                             <center>
-                                <div className="spazia">
-                                    <select name='tipology' id='tipology'>
-                                        {this.generateDropDownList()}
-                                    </select>
-                                        <br />
+                                <div className = "spazia">
+                                    <label>Typology: </label>
+                                        <select name = 'Typology' id='Typology'>
+                                            {this.generateDropDownList()}
+                                        </select>
+                                            <br />
+                                    <label>Stroke: </label>
                                     <Select></Select>
                                         <br />
+                                    <label>Diameter: </label>
                                     <Select></Select>
                                 </div>
-                                <div className="spazia">
+                                <div className = "spazia">
                                     <Button>Calcola prezzo</Button>
                                 </div>
-                                    <Message name='prezzo' id='prezzo'>Prezzo</Message>
+                                    <Message name = 'prezzo' id = 'prezzo'>Prezzo</Message>
                             </center>
                         </div>
                 </>
             );
+            
         }
+
     }
 
     export default Configurazione;

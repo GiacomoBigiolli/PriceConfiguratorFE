@@ -9,8 +9,8 @@ import logo from '../img/logoCypag.svg'
 
             return (
                 <>
-                    <div className='sfondoHeader'>
-                        <img src={logo} alt='' className='imgLogo'></img>
+                    <div className = 'sfondoHeader'>
+                        <img src = {logo} alt = '' className = 'imgLogo'></img>
                     </div>
                 </>
             );

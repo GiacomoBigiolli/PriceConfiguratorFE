@@ -1,12 +1,14 @@
 import './App.css';
 import Configurazione from './components/configurazione';
 
-function App() {
-  return (
-    <>
-      <Configurazione />
-    </>
-  );
-}
+  function App() {
 
-export default App;
+    return (
+      <>
+        <Configurazione />
+      </>
+    );
+    
+  }
+
+  export default App;
