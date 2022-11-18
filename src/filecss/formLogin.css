@@ -1,0 +1,38 @@
+.dimension{
+    width: 20vw;
+    padding-bottom: 20px;
+}
+
+Form{
+    align-content: center !important;
+    text-align: center;
+    height: 100vh;
+    padding-top: 50vh;
+    margin-top: -20vh !important;
+}
+
+Button{
+    background-color: rgb(62, 166, 226) !important;
+}
+
+Button:hover{
+    background-color: rgb(55, 146, 199) !important;    
+    font-weight: bolder !important;
+}
+
+Input[type=text],[type=password]{
+    border-radius: 0px !important;
+    border-top: 0px !important;
+    border-left: 0px !important;
+    border-right: 0px !important;
+    background-color: transparent !important;
+    color: lightgray !important;
+    border-color: lightgray !important;
+}
+
+body{
+    background-image: url('../img/tubi.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
