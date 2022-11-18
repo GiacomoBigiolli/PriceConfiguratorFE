@@ -1,7 +1,7 @@
 import React from "react";
 import '../filecss/formLogin.css';
 import {Form, Input, Button} from 'semantic-ui-react';
-import Header from './intestazione';
+import Intestazione from './intestazione';
 
     class FromLogin extends React.Component {
 
@@ -9,7 +9,7 @@ import Header from './intestazione';
 
             return (
                 <>
-                    <Header></Header>
+                    <Intestazione />
                     <div className="ui three column centered grid">
                         <div></div>
                             <div>
