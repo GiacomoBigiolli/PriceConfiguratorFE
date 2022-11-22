@@ -1,7 +1,7 @@
 import React from 'react';
-import 'semantic-ui-css/semantic.min.css';
 import '../filecss/header.css';
 import logo from '../img/logoCypag.svg'
+//import 'semantic-ui-css/semantic.min.css';
 
     class intestazione extends React.Component {
 

@@ -1,11 +1,14 @@
 import './App.css';
-import Configurazione from './components/configurazione';
+import 'bulma/css/bulma.min.css';
+import FromLogin from './components/formLogin';
+//import Configurazione from './components/configurazione';
 
   function App() {
 
     return (
       <>
-        <Configurazione />
+        <FromLogin />
+        {/* <Configurazione />  */}
       </>
     );
     

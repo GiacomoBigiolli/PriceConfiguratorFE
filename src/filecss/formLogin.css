@@ -11,28 +11,24 @@ Form{
     margin-top: -20vh !important;
 }
 
-Button{
-    background-color: rgb(62, 166, 226) !important;
+.sfondo{
+    background-image: url('../img/tubi.jpg');
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
 }
 
-Button:hover{
-    background-color: rgb(55, 146, 199) !important;    
-    font-weight: bolder !important;
-}
-
-Input[type=text],[type=password]{
-    border-radius: 0px !important;
+input{
+    background: transparent !important;
     border-top: 0px !important;
     border-left: 0px !important;
     border-right: 0px !important;
-    background-color: transparent !important;
+    border-radius: 0px !important;
+    width: 20vw !important;
+    margin-bottom: 30px;
     color: lightgray !important;
-    border-color: lightgray !important;
 }
 
-body{
-    background-image: url('../img/tubi.jpg');
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+input::placeholder{
+    color: lightgray !important;
 }
